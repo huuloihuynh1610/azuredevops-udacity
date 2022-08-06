@@ -31,6 +31,9 @@ Create a custom policy definition
 Create a custom policy assignment
 
     az policy assignment create --name "name" --scope "subscription_id" --policy "server.json"
+To show all the policy use this command:
+
+    az policy assignment list
 Use Azure CLI to create a Service Principal
 
     az ad sp create-for-rbac --role Contributor --scopes /subscriptions/<subscription_id> --query "{ client_id: appId, client_secret: password, tenant_id: tenant }"
