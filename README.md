@@ -49,6 +49,10 @@ Use Terraform to create the infrastucture
 
     terraform apply solution.plan
 
+To delete the source which is created, run this command:
+
+    terraform destroy
+
 Required variables are defined in variables.tf. Default values can be added to the file or value could be passed through cmdline when running terraform plan
 
     * prefix: The prefix for all resources in the template.
