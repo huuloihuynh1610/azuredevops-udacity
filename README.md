@@ -60,5 +60,6 @@ Required variables are defined in variables.tf. Default values can be added to t
     * vm_machine_count: The number of virtual machines will be deployed.
 
 Output
+
     - After runing all the commands you will see the messages on the command line, that is the result.
     - When you create the variable file you will see that the number of deployed resource is based on the number of vm_machine_count that you enter.
