@@ -1,16 +1,18 @@
 Introduction
-First, We need to install Packer and Terraform template to deploy a server in Azure.
+    - First, We need to install Packer and Terraform template to deploy a server in Azure.
 
 Getting Started
-Clone this repository
 
-Create and assign custom policies using Azure CLI
+    Clone this repository (https://github.com/huuloihuynh1610/azuredevops-udacity)
 
-Create create an image using Packer
+    Create and assign custom policies using Azure CLI
 
-Create infrastucture using Terraform
+    Create create an image using Packer
+
+    Create infrastucture using Terraform
 
 Dependencies
+
     - Create an Azure Account
     - Install the Azure command line interface
     - Install Packer
