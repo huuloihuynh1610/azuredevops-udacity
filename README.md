@@ -44,6 +44,8 @@ Enter your SubscriptionId, ClientId, ClientSecret, TenantId into Server.json fil
 Use Packer to create the image
 
     packer build server.json
+    ![Untitled](https://user-images.githubusercontent.com/65603266/183238653-a172c47e-c945-49a9-8aa0-0c9977f1f151.png)
+
 Use Terraform to create the infrastucture
 
     terraform init
