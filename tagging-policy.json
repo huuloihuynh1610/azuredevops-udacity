@@ -1,13 +1,45 @@
 {
     "if": {
-        "allof": [
+      "allOf": [
+        {
+          "field": "type",
+          "equals": "Microsoft.Resources/subscriptions/resourceGroups"
+        },
+        {
+          "anyOf": [
             {
-                "field": "[concat('tags[', parameters('tagName'), ']')]",
-                "exists": "false"
+              "field": "tags",
+              "exists": "false"
+            },
+            {
+              "value": "[length(field('tags'))]",
+              "equals": 0
+            },
+            {
+              "field": "tags",
+              "equals": ""
+            },
+            {
+              "field": "tags",
+              "equals": "{}"
+            },
+            {
+              "value": "[length(field('tags'))]",
+              "equals": ""
+            },
+            {
+              "field": "tags['']",
+              "exists": "true"
+            },
+            {
+              "field": "tags['None']",
+              "exists": "true"
             }
-        ]
+          ]
+        }
+      ]
     },
     "then": {
-        "effect": "deny"
+      "effect": "deny"
     }
-}
+  }
