@@ -5,7 +5,7 @@ variable "prefix" {
 
 variable "location" {
   description = "The Azure Region in which all resources in this example should be created."
-  default = "Germany West Central"
+  default = "South East Asia"
 }
 
 variable "username" {
@@ -15,7 +15,7 @@ variable "username" {
 
 variable "source_image_name" {
   description = "The name of the source image for the vm"
-  default = "azuredevops-pj1 -image"
+  default = "azuredevops-pj1-image"
 }
 
 variable "source_image_rg" {
