@@ -25,12 +25,12 @@ Login to Azure
     az login 
 Create a custom policy definition
 
-    az policy definition create --name "name" --rules "server.json"
+    az policy definition create --name "name" --rules "tagging-policy.json"
     ## Note:
         - server.json is the json file contain all your command to create packer image.
 Create a custom policy assignment
 
-    az policy assignment create --name "name" --scope "subscription_id" --policy "server.json"
+    az policy assignment create --name "name" --scope "subscription_id" --policy "tagging-policy.json"
 To show all the policy use this command:
 
     az policy assignment list
@@ -48,7 +48,7 @@ Use Terraform to create the infrastucture
 
     terraform init
 
-    terraform plan --out solution.plan -var 'variable=varaible_value'
+    terraform plan --out solution.plan
 
     terraform apply solution.plan
 
